@@ -17,11 +17,12 @@ const compareGuesses = (humGuess, compGuess, target) => {
 const updateScore = (winner) => {
     switch (winner.toLowerCase()){
         case 'human':
-            humanScore += 1;
+            humanScore++;
             break;
         case 'computer':
-            computerScore += 1;
+            computerScore++;
             break;
     }
 }
 
+const advanceRound = () => currentRoundNumber++;
